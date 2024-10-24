@@ -1,0 +1,2 @@
+class PhoneValidationError(Exception):
+    pass
