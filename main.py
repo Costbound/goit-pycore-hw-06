@@ -1,4 +1,4 @@
-from handlers import add_contact, change_contact, get_phone, get_all_contacts
+from handlers import add_contact, change_contact, get_phones, get_all_contacts
 from address_book import AddressBook
 
 def parse_input(user_input):
@@ -23,7 +23,7 @@ def main():
         elif command == "change":
             print(change_contact(args, contacts))
         elif command == 'phone':
-            print(get_phone(args, contacts))
+            print(get_phones(args, contacts))
         elif command == 'all':
             print(get_all_contacts(contacts))
         else:
